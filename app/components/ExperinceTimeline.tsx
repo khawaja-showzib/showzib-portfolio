@@ -15,9 +15,24 @@ type ExperienceItem = {
 
 const experience = [
   {
+    role: "Senior Frontend Engineer",
+    company: "EVIVA ED",
+    period: "Nov 2025 — Present",
+    summary:
+      "Contributing to the frontend architecture of high-complexity crypto and trading platforms, focusing on real-time data systems, secure role-based access, and performance-critical dashboards.",
+    bullets: [
+      "Engineered complex trading dashboards handling real-time market data, portfolio tracking, and transaction flows",
+      "Integrated live crypto charts and streaming data with performance-optimized rendering strategies",
+      "Implemented advanced role-based authentication and permission systems for secure financial operations",
+      "Designed and maintained complex business logic for trading workflows, order handling, and state synchronization",
+      "Built scalable API integration layers for high-frequency data and mission-critical features",
+      "Collaborated closely with backend and product teams to translate financial logic into robust frontend systems",
+    ],
+  },
+  {
     role: "Frontend Developer",
     company: "Digital Gravity",
-    period: "Jul 2023 — Present",
+    period: "Jul 2023 — Nov 2025",
     summary:
       "Building scalable, content-driven web applications and dynamic frontend systems using modern React and Next.js architecture.",
     bullets: [
