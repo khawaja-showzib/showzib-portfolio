@@ -23,6 +23,8 @@ export function useTheme() {
 
     setTheme(initial);
     document.documentElement.setAttribute("data-theme", initial);
+    document.documentElement.classList.remove("dark", "light");
+    document.documentElement.classList.add(initial);
   }, []);
 
   const toggleTheme = () => {
