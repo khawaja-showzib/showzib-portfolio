@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default = Dark (your current palette) */
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --color-primary: #60a5fa;
+  --color-accent: #bae6fd;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border-main: #334155;
+}
+
+/* Light theme overrides */
+:root[data-theme="light"] {
+  --bg-main: #f1f5f9; /* very light slate (not pure white) */
+  --bg-card: #ffffff; /* clean white cards */
+  --color-primary: #3b82f6; /* blue-500 (matches dark primary family) */
+  --color-accent: #7dd3fc; /* soft sky blue accent */
+  --text-main: #0f172a; /* slate-900 */
+  --text-muted: #64748b; /* slate-500 */
+  --border-main: #e2e8f0; /* slate-200 */
+}
+
+@theme inline {
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-primary: var(--color-primary);
+  --color-accent: var(--color-accent);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-border-main: var(--border-main);
+
+  --font-poppins: var(--font-poppins);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-poppins), sans-serif;
+}
